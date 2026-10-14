@@ -40,3 +40,7 @@ tests/      unit tests, including a real promote against a throwaway git repo
 ```
 
 Built archives are attached to GitHub Releases in this repo, not committed to git.
+
+## Catalog
+
+`catalog.json` lists every released version of the App and each module and which channels it has reached (`dev`, then `beta`, then `stable`). A new version enters as `dev`. **Promote channel** adds `beta` or `stable` to the versions it moves. The App's version picker offers only the versions that have reached the channel you follow: stable shows stable, beta shows beta and stable, dev shows all.

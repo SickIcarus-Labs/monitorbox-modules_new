@@ -15,6 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import catalog  # noqa: E402
 import pointer  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -47,6 +48,16 @@ def main(argv: list[str]) -> int:
     except (ValueError, subprocess.CalledProcessError) as exc:
         print(f"refused: {exc}", file=sys.stderr)
         return 1
+
+    if args.source != args.target:  # forward promotion: record that these versions reached the target
+        try:
+            cat_path = ROOT / "catalog.json"
+            cat = catalog.mark_reached(catalog.load(cat_path), result, args.target)
+        except ValueError as exc:
+            print(f"refused: {exc}", file=sys.stderr)
+            return 1
+        cat_path.write_text(catalog.dump(cat), encoding="utf-8")
+        print("updated catalog.json")
 
     target_path = ROOT / "channels" / f"{args.target}.json"
     target_path.write_text(pointer.dump(result), encoding="utf-8")

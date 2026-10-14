@@ -25,6 +25,12 @@ def good(channel="dev"):
     }
 
 
+def catalog_for_good():
+    g = good()
+    entry = lambda a: {**a, "signature": None, "published": "2026-10-14T00:00:00Z", "channels": ["dev"]}
+    return {"schema": 1, "app": [entry(g["app"])], "modules": {"snmp": [entry(g["modules"]["snmp"])]}}
+
+
 class ValidateTests(unittest.TestCase):
     def test_valid_pointer(self):
         self.assertEqual(pointer.validate(good(), "dev"), [])
@@ -90,6 +96,7 @@ class CliTests(unittest.TestCase):
         (self.tmp / "channels").mkdir()
         for name in pointer.CHANNELS:
             shutil.copy(ROOT / "channels" / f"{name}.json", self.tmp / "channels" / f"{name}.json")
+        (self.tmp / "catalog.json").write_text(json.dumps(catalog_for_good()))
         self.git("init", "-q", "-b", "main")
         self.git("config", "user.email", "test@example.test")
         self.git("config", "user.name", "test")
@@ -125,6 +132,27 @@ class CliTests(unittest.TestCase):
         self.assertEqual(self.read("beta")["app"], good()["app"])
         self.assertEqual((self.tmp / "channels" / "dev.json").read_text(), before_dev)
         self.assertEqual((self.tmp / "channels" / "stable.json").read_text(), before_stable)
+
+    def test_promotion_records_channel_in_catalog(self):
+        self.write("dev", good("dev"))
+        self.assertEqual(self.promote("--source", "dev", "--target", "beta").returncode, 0)
+        cat = json.loads((self.tmp / "catalog.json").read_text())
+        self.assertEqual(cat["app"][0]["channels"], ["dev", "beta"])
+        self.assertEqual(cat["modules"]["snmp"][0]["channels"], ["dev", "beta"])
+        self.git("add", "-A")  # the real workflow commits between promotions
+        self.git("commit", "-q", "-m", "promoted to beta")
+        self.assertEqual(self.promote("--source", "beta", "--target", "stable").returncode, 0)
+        cat = json.loads((self.tmp / "catalog.json").read_text())
+        self.assertEqual(cat["app"][0]["channels"], ["dev", "beta", "stable"])
+
+    def test_promoting_a_version_missing_from_catalog_is_refused(self):
+        d = good("dev")
+        d["app"]["version"] = "9.9.9"
+        self.write("dev", d)
+        done = self.promote("--source", "dev", "--target", "beta")
+        self.assertNotEqual(done.returncode, 0)
+        self.assertIn("not in the catalog", done.stderr)
+        self.assertEqual(self.read("beta")["app"], None)  # and nothing was written
 
     def test_skipping_beta_is_refused(self):
         self.write("dev", good("dev"))

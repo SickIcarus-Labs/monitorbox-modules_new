@@ -43,6 +43,7 @@ jobs:
       - name: Re-check everything first
         run: |
           python tools/pointer.py channels/*.json
+          python tools/catalog.py catalog.json channels/*.json
           python -m unittest discover -s tests
       - name: Move the channel
         env:
@@ -54,6 +55,7 @@ jobs:
           if [ -n "$REF" ]; then args+=(--ref "$REF"); fi
           python tools/promote.py "${args[@]}"
           python tools/pointer.py channels/*.json
+          python tools/catalog.py catalog.json channels/*.json
       - name: Commit
         env:
           SOURCE: ${{ inputs.source }}
@@ -61,7 +63,7 @@ jobs:
         run: |
           git config user.name "monitorbox-promote"
           git config user.email "actions@users.noreply.github.com"
-          git add channels
+          git add channels catalog.json
           git diff --cached --quiet && { echo "Nothing changed; nothing to commit."; exit 0; }
           git commit -m "Promote ${SOURCE} -> ${TARGET}"
           git push
