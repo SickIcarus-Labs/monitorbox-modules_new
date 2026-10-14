@@ -1,18 +1,18 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-14T20:47:49Z",
+  "updated": "2026-10-14T21:18:14Z",
   "app": {
-    "version": "0.6.1",
-    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.6.1/app-0.6.1.tar.gz",
-    "sha256": "1e5a947ded1a03d7f3a7c528b1cc726438014647633b80c084a4d9510e5dddd4",
+    "version": "0.7.0",
+    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.7.0/app-0.7.0.tar.gz",
+    "sha256": "f9466544c4564bbc4040e94b41298f2dc132697be4dbd8632a5f8e5d6c6b57e9",
     "signature": null
   },
   "modules": {
     "hello": {
-      "version": "0.2.0",
-      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-hello-0.2.0/module-hello-0.2.0.tar.gz",
-      "sha256": "d615e061f9731ff801566d656dccd8a771f680fb5eed3085195c0f579d9c9584",
+      "version": "0.3.0",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-hello-0.3.0/module-hello-0.3.0.tar.gz",
+      "sha256": "e1412df9e2d284d0061afe6c62d1250aa86da47c8dd2c53f312ad65d7c93bdfb",
       "signature": null
     }
   }
