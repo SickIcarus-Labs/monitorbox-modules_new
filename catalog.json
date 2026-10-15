@@ -2,6 +2,16 @@
   "schema": 1,
   "app": [
     {
+      "version": "0.11.0",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.11.0/app-0.11.0.tar.gz",
+      "sha256": "d9304df45a5f312056ca66431b19c007475a6bb8c47b949355c7a25d1511f0ab",
+      "signature": null,
+      "published": "2026-10-15T02:35:27Z",
+      "channels": [
+        "dev"
+      ]
+    },
+    {
       "version": "0.10.0",
       "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.10.0/app-0.10.0.tar.gz",
       "sha256": "8177e097dac89f9524c66bc5a27cc4c83965e1e7c512c4d91a4d1fe2b9ffd7c7",
@@ -316,6 +326,18 @@
         "sha256": "7fa34b5d2b2c85d63c3259f7940b8853581b5e8fa3d039902fd066d987949f0a",
         "signature": null,
         "published": "2026-10-15T01:44:52Z",
+        "channels": [
+          "dev"
+        ]
+      }
+    ],
+    "unifi": [
+      {
+        "version": "0.1.0",
+        "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-unifi-0.1.0/module-unifi-0.1.0.tar.gz",
+        "sha256": "85ca126e7ca08129313fd14b7eec2c289f45f68f213bd997ff41474290a14436",
+        "signature": null,
+        "published": "2026-10-15T02:35:27Z",
         "channels": [
           "dev"
         ]
