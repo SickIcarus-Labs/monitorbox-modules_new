@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-16T13:44:00Z",
+  "updated": "2026-10-16T14:07:31Z",
   "app": {
-    "version": "0.33.1",
-    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.33.1/app-0.33.1.tar.gz",
-    "sha256": "ca507a04d350ea1b9c2cd4375b45c1bd0190aa16a4473338ab061d5cf6cb8beb",
+    "version": "0.34.0",
+    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.34.0/app-0.34.0.tar.gz",
+    "sha256": "ba2e9dce41a1c5cd59206957c40f3cafe06f84ad37a94a2b1b20ba814cf0c2cf",
     "signature": null
   },
   "modules": {
@@ -58,9 +58,9 @@
       "signature": null
     },
     "scrypted": {
-      "version": "0.1.1",
-      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-scrypted-0.1.1/module-scrypted-0.1.1.tar.gz",
-      "sha256": "2f4f33f57c5cdcdc29e145101ef23e7b33c3d8fe8752a7b83b2387d365c0eafa",
+      "version": "0.2.0",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-scrypted-0.2.0/module-scrypted-0.2.0.tar.gz",
+      "sha256": "b178adbe458ee3739912073bdf2ace94659974dcd7ba1147482b226628e37e26",
       "signature": null
     }
   }
