@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-17T00:23:57Z",
+  "updated": "2026-10-17T01:01:02Z",
   "app": {
-    "version": "0.41.2",
-    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.41.2/app-0.41.2.tar.gz",
-    "sha256": "a6fd376ec9cf975758571a8b4100988d71b70151211af6a38e6bdc0f5687ac3a",
+    "version": "0.41.3",
+    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.41.3/app-0.41.3.tar.gz",
+    "sha256": "e8fce4fd38a36111da77ea38f06d3a2cce0e87419a77725f3e362851ef3e2e98",
     "signature": null
   },
   "modules": {
@@ -22,9 +22,9 @@
       "signature": null
     },
     "snmp": {
-      "version": "0.1.5",
-      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-snmp-0.1.5/module-snmp-0.1.5.tar.gz",
-      "sha256": "ae4b70cd0aa524af027ab512ee41c7bd6f92e5bc335192172cc7f1eb50cdc177",
+      "version": "0.1.6",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-snmp-0.1.6/module-snmp-0.1.6.tar.gz",
+      "sha256": "6399a45aa4a816c1be76d795993ac26ff1a23b8eeb2999136bdc41cf7978021b",
       "signature": null
     },
     "nut": {
