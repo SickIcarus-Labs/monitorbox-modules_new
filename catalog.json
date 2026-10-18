@@ -1295,6 +1295,16 @@
     ],
     "portainer": [
       {
+        "version": "0.1.5",
+        "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-portainer-0.1.5/module-portainer-0.1.5.tar.gz",
+        "sha256": "280679c785dd382fed11a791672d0038a7f984214890f3c0d0c449f21738cbed",
+        "signature": null,
+        "published": "2026-10-18T16:06:20Z",
+        "channels": [
+          "dev"
+        ]
+      },
+      {
         "version": "0.1.4",
         "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-portainer-0.1.4/module-portainer-0.1.4.tar.gz",
         "sha256": "6da8e10dee51074ef50e8513c2942e95b330fc4529015c78fd680d7a6587ca76",

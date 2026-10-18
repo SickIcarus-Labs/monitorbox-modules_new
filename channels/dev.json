@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-18T09:02:01Z",
+  "updated": "2026-10-18T16:06:20Z",
   "app": {
     "version": "0.51.0",
     "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.51.0/app-0.51.0.tar.gz",
@@ -40,9 +40,9 @@
       "signature": null
     },
     "portainer": {
-      "version": "0.1.4",
-      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-portainer-0.1.4/module-portainer-0.1.4.tar.gz",
-      "sha256": "6da8e10dee51074ef50e8513c2942e95b330fc4529015c78fd680d7a6587ca76",
+      "version": "0.1.5",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-portainer-0.1.5/module-portainer-0.1.5.tar.gz",
+      "sha256": "280679c785dd382fed11a791672d0038a7f984214890f3c0d0c449f21738cbed",
       "signature": null
     },
     "unifi-network": {
