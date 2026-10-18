@@ -1217,6 +1217,16 @@
     ],
     "unifi-network": [
       {
+        "version": "0.2.5",
+        "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-unifi-network-0.2.5/module-unifi-network-0.2.5.tar.gz",
+        "sha256": "aa612ad788f739572cada6cc73067895c6a069c4a10db0a227dbdb5222c19e2a",
+        "signature": null,
+        "published": "2026-10-18T03:17:12Z",
+        "channels": [
+          "dev"
+        ]
+      },
+      {
         "version": "0.2.4",
         "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-unifi-network-0.2.4/module-unifi-network-0.2.4.tar.gz",
         "sha256": "e9bc14d4b2bb70163e355a5000cd1e3ac10f749fee20ba5348fa86edcf0f365c",
