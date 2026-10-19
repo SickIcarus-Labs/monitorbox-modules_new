@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-19T03:41:03Z",
+  "updated": "2026-10-19T04:07:41Z",
   "app": {
-    "version": "0.60.0",
-    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.60.0/app-0.60.0.tar.gz",
-    "sha256": "185dc3d3263adf0b9cba147add42bd635a82a1d5d5302113fc5fc969c0eb7575",
+    "version": "0.61.0",
+    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.61.0/app-0.61.0.tar.gz",
+    "sha256": "1de54084e9383c450996c874a051e7f5f0b0ed1630777582d0123b7b7d232648",
     "signature": null
   },
   "modules": {
