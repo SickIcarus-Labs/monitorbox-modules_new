@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "channel": "dev",
-  "updated": "2026-10-20T20:34:38Z",
+  "updated": "2026-10-20T22:04:07Z",
   "app": {
-    "version": "0.77.1",
-    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.77.1/app-0.77.1.tar.gz",
-    "sha256": "00a8d5e8c927cf174ef778e6de3aad151d389c47e1e0874d87ded26fa4572cb0",
+    "version": "0.78.0",
+    "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/app-0.78.0/app-0.78.0.tar.gz",
+    "sha256": "d3cd53f1f6de3fa6b5f5e651d45446d87caee986f7903a216b054dab1aa39312",
     "signature": null
   },
   "modules": {
@@ -28,9 +28,9 @@
       "signature": null
     },
     "nut": {
-      "version": "0.1.1",
-      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-nut-0.1.1/module-nut-0.1.1.tar.gz",
-      "sha256": "cc8c7f1f9527ddc79ea10b259c2a63b82f05b12a26a5d499d7379c22aa9735df",
+      "version": "0.1.2",
+      "url": "https://github.com/SickIcarus-Labs/monitorbox-modules_new/releases/download/module-nut-0.1.2/module-nut-0.1.2.tar.gz",
+      "sha256": "afa6c13b380acfb7a26f8d1e1b07e8fcf5832eadc070346bced316ce7a4b678f",
       "signature": null
     },
     "unifi": {
