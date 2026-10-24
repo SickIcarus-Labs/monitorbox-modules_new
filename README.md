@@ -1,8 +1,8 @@
-# monitorbox-modules_new
+# monitorbox-modules
 
-Public release home for MonitorBox 4: built archives and the channel pointers that say which build each channel gets. No source code lives here (that is in the private `monitorbox_new` repo), and nothing secret ever should.
+Dependencies for [MonitorBox](https://github.com/SickIcarus-Labs/monitorbox): the built archives (the App and its modules) and the channel pointers that say which build each channel gets. No source code lives here, and nothing secret ever should. MonitorBox checks this repository for updates and checks every download against its recorded `sha256`.
 
-> Temporary name while MonitorBox 4 is built. It takes over the final `monitorbox-modules` name at launch. The existing MonitorBox 3 appliance does not read this repo.
+MIT licence, see [LICENSE](LICENSE).
 
 ## How channels work
 
@@ -15,8 +15,6 @@ A channel is **one file** in `channels/`:
 | `channels/stable.json` | The **Promote channel** workflow, after you accept beta |
 
 Each file lists the exact App and module versions for that channel: version, download URL and `sha256`. An install on a channel downloads those files and checks each checksum. A `signature` field is reserved so signing can be added later without changing the format.
-
-Before the first release exists, `app` is `null` and `modules` is empty.
 
 ## Moving a channel
 
